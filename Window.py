@@ -12,6 +12,7 @@ window.geometry(ws+'x'+hs+'+'+ws+'+'+'0')
 
 highlow = 0
 current = 'MX'
+
 def change_view():
     global highlow
     global current
@@ -23,7 +24,6 @@ def change_view():
         High_Low['text'] = "View\nHigh-Low"
     
     plot(SGDCNY,SGDMYR,SGDUSD,current,highlow,window)
-
 
 def plt1():
     global current
