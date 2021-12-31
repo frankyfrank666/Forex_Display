@@ -1,4 +1,3 @@
-from matplotlib.pyplot import switch_backend
 import get_Data
 from tkinter import *
 from Plot import *
@@ -10,8 +9,6 @@ window.title('FOREX Rate')
 ws = str(int(window.winfo_screenwidth()/2)) # width of the screen
 hs = str(window.winfo_screenheight()) # height of the screen
 window.geometry(ws+'x'+hs+'+'+ws+'+'+'0')
-
-
 
 highlow = 0
 current = 'MX'
