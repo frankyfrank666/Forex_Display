@@ -50,15 +50,15 @@ def plot(SGDCNY,SGDMYR,SGDUSD,new_start,highlow,window, end = datetime.date.toda
     ax3.yaxis.set_label_coords(-0.13, 0.25)
     plt.subplots_adjust(left=0.15,right = 0.9,top=0.95,bottom=0.15)
 
-    # canvas = FigureCanvasTkAgg(fig, master = window)  
-    # toolbar = NavigationToolbar2Tk(canvas, window)
+    canvas = FigureCanvasTkAgg(fig, master = window)  
+    toolbar = NavigationToolbar2Tk(canvas, window)
 
-    # canvas.draw()
-    # canvas.get_tk_widget().place(x=0, y=80)
-    # toolbar.place(x=0, y=40)
+    canvas.draw()
+    canvas.get_tk_widget().place(x=0, y=80)
+    toolbar.place(x=0, y=40)
 
     mplcursors.cursor(hover=True) 
 
-    plt.show()
+    # plt.show()
 
     return fig, ax1, ax2, ax3
